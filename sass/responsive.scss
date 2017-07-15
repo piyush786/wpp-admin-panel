@@ -1,0 +1,62 @@
+$mobile: 'only screen and (max-width:767px)';
+$tab: 'only screen and (min-width:768px) and (max-width:980px)';
+$mini: 'only screen and (min-width:981px) and (max-width:1170px)';
+@media #{$mini} {
+  main {
+    aside#sidebar {
+      width: 25%;
+    }
+  }
+
+  section#page-content {
+    width: 75%;
+  }
+}
+@media #{$tab} {
+  main {
+    aside#sidebar {
+      width: 30%;
+    }
+  }
+
+  section#page-content {
+    width: 70%;
+  }
+}
+@media #{$mobile} {
+  header {
+    #AdminNavbar {
+      ul {
+        li {
+          .dropdown-link {
+            ul.dropdown-menu {
+              a {
+                color: #fff;
+                &:hover
+                {
+                  background-color: #eee;
+                  color:#333;
+                  transition: all 0.3s;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  main {
+    aside#sidebar {
+      width: 100%;
+      position: static;
+      min-height: auto;
+    }
+  }
+
+  section#page-content {
+    width: 100%;
+    margin-top: 10px;
+    min-height: 100vh;
+  }
+}

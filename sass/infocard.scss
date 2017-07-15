@@ -1,0 +1,102 @@
+.infocard
+{
+  box-shadow: 0px 0px 10px #aaa;
+  margin:5px;
+  min-height: 62px;
+  margin-top:20px;
+
+  div{
+    display: inline-block;
+  }
+  .infoimg
+  {
+    max-height: 70px;
+    float:left;
+    width:30%;
+    padding:5px;
+    font-size:30px;
+    padding:10px;
+    text-align: center;
+    color:#fff;
+  }
+  .infoetxt
+  {
+    float:right;
+    padding:10px;
+    max-height: 70px;
+    width:70%;
+    background-color: #fff;
+    h2
+    {
+      margin:0px;
+      font-size: 20px;
+    }
+    a{
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+
+}
+
+
+.infoprimary
+{
+  .infoimg
+  {
+    background-color: $primary-color;
+  }
+  .infoetxt
+  {
+    a{
+      color: $primary-color;
+    }
+  }
+}
+.infodanger
+{
+  .infoimg
+  {
+    background-color: $danger-color;
+  }
+  .infoetxt
+  {
+    a{
+      color: $danger-color;
+    }
+  }
+}
+.infowarning
+{
+  .infoimg
+  {
+    background-color: $warning-color;
+  }
+  .infoetxt
+  {
+    a{
+      color: $warning-color;
+    }
+  }
+}
+.infosuccess
+{
+  .infoimg
+  {
+    background-color: $success-color;
+  }
+  .infoetxt
+  {
+    a{
+      color: $success-color;
+    }
+  }
+
+}
+
+@media #{$mobile} {
+  .infocard
+  {
+    max-width:350px;
+  }
+}

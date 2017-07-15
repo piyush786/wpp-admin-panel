@@ -1,0 +1,23 @@
+{
+  "name": "wpp-admin",
+  "version": "1.0.0",
+  "description": "this is admin panel made to handle diffrent requirements in diffrent project. it is purely based on bootstrap and built with sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "console.log(\"admin panel installed\")"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/piyush786/wpp-admin-panel.git"
+  },
+  "keywords": [
+    "admin",
+    "panel"
+  ],
+  "author": "piyush kapoor",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/piyush786/wpp-admin-panel/issues"
+  },
+  "homepage": "https://github.com/piyush786/wpp-admin-panel#readme"
+}
